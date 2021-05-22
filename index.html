@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Hello Bulma!</title>
-  </head>
-  <body>
-    <section class="hero is-success">
-        <div class="hero-body">
-          <p class="title">
-            Food Finders
-          </p>
-          <p class="subtitle">
-            Description
-          </p>
-        </div>
-        <form class="example" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-      </section>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <section class="hero is-success is-halfheight">
+    <div class="hero-body">
+      <div class="">
+        <p class="title">
+          Food Finders
+        </p>
+        <p class="subtitle">
+          Description
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="field is-grouped is-grouped-centered">
+    <input class="input is-warning" type="text" placeholder="Search for food and drinks here...">
+    <p class="control">
+      <a class="button is-primary">
+        Search
+      </a>
+    </p>
+  </div>
+
+  <div class="tabs is-centered">
+    <ul>
+      <li><a>Food</a></li>
+      <li><a>Drinks</a></li>
+      <li><a>Recipies</a></li>
+      <li><a>More</a></li>
+    </ul>
+  </div> 
+  
+  <div class="columns">
+    <div class="column is-half">
+      <u>Food</u>
+      <p>If you're struggling to pick out what to eat look at the different types of food below and search for a random recipe!</p>
+      <img src="assets/images/charred-chicken-with-sweet-potatoes-and-oranges-BA-011917.jpg">
+      <ul>
+        <li>Mexican</li>
+        <li>American</li>
+        <li>Italian</li>
+        <li>Chinese</li>
+        <li>African</li>
+      </ul>
+      <a class="button is-primary">
+        Search for food!
+      </a>
+    </div>
+    <div class="column is-half">
+      <u>Drinks</u>
+    </div>
+  </div>
+
+ 
+</body>
+
 </html>
