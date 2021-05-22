@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Cormorant Upright', serif;
+    font-family: 'Cormorant Upright', serif;   
 }
 
 .columns {
@@ -15,7 +15,7 @@
 
 .input, .textarea {
     width: 50%;
-    padding: 20px;
+    padding: 20px; 
     margin-top: 15px;
 }
 
@@ -29,8 +29,7 @@ img {
 }
 
 li {
-    font-size: 25px;
-    
+    font-size: 25px;   
 }
 
 u {
@@ -49,3 +48,6 @@ p {
     background-color: rgb(245, 245, 135);
 }
 
+body {
+    background-image: url(../images/background.png);
+}
