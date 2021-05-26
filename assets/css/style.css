@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Cormorant Upright', serif;   
+}
+
+.columns {
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero-body {
+    text-align: center;
+    background-image: url(../images/Superfoods-the-nutrition-source.jpg);
+    }
+
+.input, .textarea {
+    width: 50%;
+    padding: 20px; 
+    margin-top: 15px;
+}
+
+.control {
+    margin-top: 15px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+li {
+    font-size: 25px;   
+}
+
+u {
+    text-decoration: underline solid darkturquoise;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 40px;
+}
+
+p {
+    font-size: 19px;
+}
+
+.tabs li a:hover {
+    border-bottom-color: rgb(245, 245, 135);
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 135);
+}
+
+body {
+    background-image: url(../images/background.png);
+}
