@@ -10,8 +10,28 @@
 
 .hero-body {
     text-align: center;
+    display: block!important;
     background-image: url(../images/Superfoods-the-nutrition-source.jpg);
-    }
+    background-size: cover;
+}
+
+#title2, #title {
+    font-size: 90px;
+    text-shadow: 1px 0 0 rgb(0, 0, 0), 0 -1px 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0);
+    color: #fff;
+}
+
+#subtitle2, #subtitle {
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#subtitle2 {
+    font-size: 35px;
+}
+
+.title {
+    margin-top: 7%;
+}
 
 .input, .textarea {
     width: 50%;
@@ -32,14 +52,18 @@ li {
     font-size: 25px;   
 }
 
-u {
+u, #firstoptiontext, #secondoptiontext, #thirdoptiontext {
     text-decoration: underline solid darkturquoise;
     font-family: 'Cormorant Upright', serif;
     font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 p {
     font-size: 19px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .tabs li a:hover {
@@ -50,4 +74,32 @@ p {
 
 body {
     background-image: url(../images/background.png);
+}
+
+.card {
+    padding: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button.is-warning {
+    padding: 20px;
+    margin-top: 15px;
+}
+
+#backbtn {
+    width: 25%;
+    margin-left: 37.5%;
+    margin-bottom: 15px;
+}
+
+#foodbtn, #drinkbtn {
+    margin-left: 0%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#searchbtn {
+    margin-left: 15px;
 }
