@@ -1,5 +1,6 @@
 // Document variable declarations
 let userInput = document.getElementById("searchinput");
+
 let searchBtn = document.getElementById("searchbtn");
 let edamamId = "15c45754";
 let edamamKey = "27854137d14a75271ecad8471fbc5826";
@@ -20,14 +21,14 @@ searchBtn.addEventListener("click", function() {
     photoStorage = [];
     linkStorage = [];
     sourceStorage = [];
-    foodCall(userInput);
-})
+
 
 // Edamam food search API call
 function foodCall() {
     fetch("http://api.edamam.com/search?app_id=" + edamamId + "&app_key=" + edamamKey + "&q=" + userInput.value)
     .then (response => response.json())
     .then(data => {
+
         document.location.href="./results.html";
         console.log(data);
         // Loop to store data for population of results page
@@ -46,11 +47,14 @@ function foodCall() {
         localStorage.setItem("Photos", photoStorage);
         localStorage.setItem("Links", linkStorage);
         localStorage.setItem("Sources", sourceStorage);
+
         }
     )
 }
 
 // Suggested search functions
+
 function randomFood() {
 
 }
+
