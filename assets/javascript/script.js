@@ -14,22 +14,24 @@ let drinkURLStorage = [];
 
 // Search button event listener
 searchBtn.addEventListener("click", function() {
-    // Clears data from storage for multiple searches
-    localStorage.removeItem("Titles");
-    localStorage.removeItem("Photos");
-    localStorage.removeItem("Links");
-    localStorage.removeItem("Sources");
-    // Clears arrays for use in populating localStorage multiple times
-    titleStorage = [];
-    photoStorage = [];
-    linkStorage = [];
-    sourceStorage = [];
-    drinkNameStorage = [];
-    drinkPhotoStorage = [];
-    drinkGlassStorage = [];
-    drinkURLStorage = [];
-    // foodCall(userInput);
-    drinkCall(userInput);
+    // Prevents the user from activating the function without input for query
+    if (userInput.value < 1) {
+        return;
+    } else {
+        // Clears data from storage for multiple searches
+        localStorage.clear();
+        // Clears arrays for use in populating localStorage multiple times
+        titleStorage = [];
+        photoStorage = [];
+        linkStorage = [];
+        sourceStorage = [];
+        drinkNameStorage = [];
+        drinkPhotoStorage = [];
+        drinkGlassStorage = [];
+        drinkURLStorage = [];
+        // foodCall(userInput);
+        drinkCall(userInput);
+    }
 })
 
 // Edamam food search API call
@@ -64,7 +66,7 @@ function drinkCall() {
     fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + userInput.value)
     .then (response => response.json())
     .then (data => {
-        //document.location.href="./results.html";
+        document.location.href="./results.html";
         console.log(data);
         // Loop to store data for population of results page
         for (let x=0; x < data["drinks"].length; x++) {
@@ -78,10 +80,10 @@ function drinkCall() {
             drinkURLStorage.push(drinkURL);
         }
         // Storage of returned API call data
-        localStorage.setItem("drinkNames", drinkNameStorage);
-        localStorage.setItem("drinkPhotos", drinkPhotoStorage);
-        localStorage.setItem("drinkGlasses", drinkGlassStorage);
-        localStorage.setItem("drinkURLs", drinkURLStorage);
+        localStorage.setItem("drinkNames", JSON.stringify(drinkNameStorage));
+        localStorage.setItem("drinkPhotos", JSON.stringify(drinkPhotoStorage));
+        localStorage.setItem("drinkGlasses", JSON.stringify(drinkGlassStorage));
+        localStorage.setItem("drinkURLs", JSON.stringify(drinkURLStorage));
     })
 }
 
