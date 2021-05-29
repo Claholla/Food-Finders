@@ -53,10 +53,10 @@ function foodCall() {
             sourceStorage.push(recipeSource);
         }
         // Storage of returned API call data
-        localStorage.setItem("Titles", titleStorage);
-        localStorage.setItem("Photos", photoStorage);
-        localStorage.setItem("Links", linkStorage);
-        localStorage.setItem("Sources", sourceStorage);
+        localStorage.setItem("Titles", JSON.stringify(titleStorage));
+        localStorage.setItem("Photos", JSON.stringify(photoStorage));
+        localStorage.setItem("Links", JSON.stringify(linkStorage));
+        localStorage.setItem("Sources", JSON.stringify(sourceStorage));
         }
     )
 }
