@@ -18,7 +18,12 @@ window.onload = function() {
     if (localStorage.getItem("drinkNames")) {
         // Loop clones the search result card and populates the clones
         for (y=0; y < drinkNames.length; y++) {
-            document.getElementById("photo").setAttribute("src", drinkPhotos[y]);
+            if (drinkPhotos[y].endsWith(".jpg")) {
+                document.getElementById("photo").setAttribute("src", drinkPhotos[y]);
+            } else {
+                document.getElementById("photo").setAttribute("src", "")
+            }
+            
             document.getElementById("maintext").innerHTML = drinkNames[y];
             document.getElementById("subtext").innerHTML = drinkGlasses[y];
             document.getElementById("link").setAttribute("href", drinkURLs[y]);
@@ -27,7 +32,10 @@ window.onload = function() {
         }
         // Deletes source for cloned results
         document.getElementById("cardclone").remove();
-
+        if (drinkNames.length < 2) {
+            document.getElementById("cardclone").setAttribute("class", "column is-one-third-desktop is-half-tablet");
+            document.getElementById("container").setAttribute("class", "columns is-centered");
+        }
     } else if (localStorage.getItem("Titles")) {
         // Loop clones the search result card and populates the clones
         for (x=0; x < titles.length; x++) {
@@ -40,6 +48,10 @@ window.onload = function() {
         }
         // Deletes source for cloned results
         document.getElementById("cardclone").remove();
+        if (titles.length < 2) {
+            document.getElementById("cardclone").setAttribute("class", "column is-one-third-desktop is-half-tablet");
+            document.getElementById("container").setAttribute("class", "columns is-centered");
+        }
 
     } else {
         document.getElementById("cardclone").remove();
