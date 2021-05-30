@@ -18,12 +18,12 @@ window.onload = function() {
     if (localStorage.getItem("drinkNames")) {
         // Loop clones the search result card and populates the clones
         for (y=0; y < drinkNames.length; y++) {
+            // Includes a placeholder image for results without provided photos
             if (drinkPhotos[y].endsWith(".jpg")) {
                 document.getElementById("photo").setAttribute("src", drinkPhotos[y]);
             } else {
-                document.getElementById("photo").setAttribute("src", "")
+                document.getElementById("photo").setAttribute("src", "../assets/images/food-placeholder.png")
             }
-            
             document.getElementById("maintext").innerHTML = drinkNames[y];
             document.getElementById("subtext").innerHTML = drinkGlasses[y];
             document.getElementById("link").setAttribute("href", drinkURLs[y]);
@@ -39,7 +39,11 @@ window.onload = function() {
     } else if (localStorage.getItem("Titles")) {
         // Loop clones the search result card and populates the clones
         for (x=0; x < titles.length; x++) {
-            document.getElementById("photo").setAttribute("src", photos[x]);
+            if (photos[x].endsWith(".jpg")) {
+                document.getElementById("photo").setAttribute("src", photos[x]);
+            } else {
+                document.getElementById("photo").setAttribute("src", "./assets/images/food-placeholder.png")
+            }
             document.getElementById("maintext").innerHTML = titles[x];
             document.getElementById("subtext").innerHTML = "Source: " + sources[x];
             document.getElementById("link").setAttribute("href", links[x]);
