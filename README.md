@@ -42,8 +42,8 @@ Link to deployed application:
 [Live Link](https://claholla.github.io/project1/)
 
 Screenshot of deployed application:
-[!Screenshot](/assets/images/Screenshot1.png/)
-[!Screenshot](/assets/images/Screenshot2.png/)
+![Screenshot](/assets/images/Screenshot1.png/)
+![Screenshot](/assets/images/Screenshot2.png/)
 
 
 # License
