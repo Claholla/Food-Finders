@@ -6,7 +6,7 @@ This application allows the user to search a server-side database (through Edama
 
 ## Motivation/User Story
 
-When it comes to human nature, food and drinks are necessary for human survival. While for some it may be easy to acquire a meal or beverage they find satisfying, others struggle daily to decide what to eat or even how to make it. With these issues in mind our team has developed a webpage to help any consumer in need of a food or drink recipe, whether it be specific to their needs or randomized for ease of choice, our website is built to handle those issues while bringing functionality and visual satisfaction to the user.
+As a consumer of food and drinks I want to either search for a randomized or specified food option so that I am not struggling with the decision of picking out a meal. When it comes to human nature, food and drinks are necessary for human survival. While for some it may be easy to acquire a meal or beverage they find satisfying, others struggle daily to decide what to eat or even how to make it. With these issues in mind our team has developed a webpage to help any consumer in need of a food or drink recipe, whether it be specific to their needs or randomized for ease of choice, our website is built to handle those issues while bringing functionality and visual satisfaction to the user.
 
 ## Process 
 #### Technology Used
@@ -42,6 +42,8 @@ Link to deployed application:
 [Live Link](https://claholla.github.io/project1/)
 
 Screenshot of deployed application:
+[!Screenshot](/assets/images/Screenshot1.png/)
+[!Screenshot](/assets/images/Screenshot2.png/)
 
 
 # License
