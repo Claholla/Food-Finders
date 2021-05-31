@@ -90,7 +90,7 @@ ranFood.addEventListener("click", function() {
 
 // Edamam food search API call
 function foodCall() {
-    fetch("http://api.edamam.com/search?app_id=" + edamamId + "&app_key=" + edamamKey + "&q=" + userInput.value)
+    fetch("https://api.edamam.com/search?app_id=" + edamamId + "&app_key=" + edamamKey + "&q=" + userInput.value)
     .then (response => response.json())
     .then(data => {
         // When API returns no relevant data this displays the results not found page
@@ -172,7 +172,7 @@ function randomFood() {
     let searchBank = ["Tacos", "Taco", "Pizza", "Pasta", "Meatball", "Quiche", "Brownie", "Cake", "Quesadilla", "Pie", "Bread", "Soup", "Stew", "Pudding"]
     let randomizer = Math.floor(Math.random() * searchBank.length);
     // Edamam API call using the result of the random bank result
-    fetch("http://api.edamam.com/search?app_id=" + edamamId + "&app_key=" + edamamKey + "&q=" + searchBank[randomizer])
+    fetch("https://api.edamam.com/search?app_id=" + edamamId + "&app_key=" + edamamKey + "&q=" + searchBank[randomizer])
     .then (response => response.json())
     .then (data => {
         document.location.href="./results.html";
