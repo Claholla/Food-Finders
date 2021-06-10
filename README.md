@@ -39,7 +39,7 @@ Providing the functionality to search through each API and calling either a spec
 # Website
 
 Link to deployed application:
-[Live Link](https://claholla.github.io/project1/)
+https://claholla.github.io/Food-Finders/
 
 Screenshot of deployed application:
 ![Screenshot](/assets/images/Screenshot1.png/)
